@@ -1,6 +1,5 @@
 package framework;
 
-import framework.CommonScript;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import pages.HomePage;
@@ -10,8 +9,8 @@ import pages.WomensPage;
 /**
  * Created by shazeda on 5/21/17.
  */
-public class GucciCommonScript extends CommonScript {
-
+public class GucciCommonAPI extends CommonAPI {
+    //
     protected HomePage homePage;
     protected RunwayPage runwayPage;
     protected WomensPage womensPage;

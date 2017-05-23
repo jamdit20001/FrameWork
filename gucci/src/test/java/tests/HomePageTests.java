@@ -1,13 +1,13 @@
 package tests;
 
-import framework.GucciCommonScript;
+import framework.GucciCommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
  * Created by shazeda on 5/21/17.
  */
-public class HomePageTests extends GucciCommonScript {
+public class HomePageTests extends GucciCommonAPI {
 
     @Test
     public void testRunwayLink() {

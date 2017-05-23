@@ -1,0 +1,14 @@
+<suite name="Amazon test automation" verbose="10">
+
+    <parameter name="url" value="https://www.amazon.com" />
+    <parameter name="browser" value="chrome" />
+    <parameter name="platform" value="mac" />
+    <parameter name="env" value="local" />
+
+    <test name="Home Page" preserve-order="true">
+        <classes>
+            <class name="tests.HomePageLinksTest" />
+        </classes>
+    </test>
+
+</suite>

@@ -6,6 +6,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -26,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by shazeda on 5/21/17.
  */
-public class CommonScript {
+public class CommonAPI {
 
     protected WebDriver driver = null;
 
@@ -92,6 +93,8 @@ public class CommonScript {
         }
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
         driver.get(url);
     }
 
@@ -122,4 +125,53 @@ public class CommonScript {
             //ignore
         }
     }
+
+    public String  getCurrentPageUrl(){
+        String url = driver.getCurrentUrl();
+        return url;
+    }
+
+    public void navigateBack(){
+        driver.navigate().back();
+    }
+
+    public void navigateForward(){
+        driver.navigate().forward();
+    }
+
+    public void refreshPage(){
+        driver.navigate().refresh();
+    }
+
+    public void mouseHover(WebElement element){
+        try {
+            Actions action = new Actions(driver);
+            Actions hover = action.moveToElement(element);
+        } catch(Exception ex) {
+            System.out.println("First attempt has been done, This is second try");
+            Actions action = new Actions(driver);
+            action.moveToElement(element).perform();
+        }
+    }
+
+    //handling Alert
+    public void okAlert(){
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+    }
+    public void cancelAlert(){
+        Alert alert = driver.switchTo().alert();
+        alert.dismiss();
+    }
+
+    //iFrame Handle
+    public void iframeHandle(WebElement element){
+        driver.switchTo().frame(element);
+    }
+
+    public void goBackToHomeWindow(){
+        driver.switchTo().defaultContent();
+    }
+
+
 }
