@@ -9,7 +9,7 @@
     <classes>
       <class name="tests.HomePageLinksTest">
         <methods>
-          <include name="testHelpLink"/>
+          <include name="testTodaysDealLink"/>
           <include name="setup"/>
           <include name="setUpPageObject"/>
           <include name="teardown"/>

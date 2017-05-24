@@ -14,4 +14,10 @@ public class HeaderPage {
 
     @FindBy(id = "nav-cart")
     public WebElement cartLink;
+
+    @FindBy(xpath = "//div[@id='nav-xshop']//a[text()=\"Today's Deals\"]")
+    public WebElement todaysDealLink;
+
+    @FindBy(xpath = "//div[@id='nav-xshop']//a[text()='Gift Cards & Registry']")
+    public WebElement giftRegistryLink;
 }

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="10" name="Failed suite [Amazon test automation]">
-  <parameter name="browser" value="chrome"/>
-  <parameter name="env" value="local"/>
-  <parameter name="url" value="https://www.amazon.com"/>
-  <parameter name="platform" value="mac"/>
-  <test name="Home Page(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test name="finalautomation(failed)">
     <classes>
       <class name="tests.HomePageLinksTest">
         <methods>
@@ -16,5 +12,5 @@
         </methods>
       </class> <!-- tests.HomePageLinksTest -->
     </classes>
-  </test> <!-- Home Page(failed) -->
-</suite> <!-- Failed suite [Amazon test automation] -->
+  </test> <!-- finalautomation(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

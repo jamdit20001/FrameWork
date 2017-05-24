@@ -13,5 +13,4 @@ public class HomePage {
 
     @FindBy(xpath = "//div[@class='header-nav-section-title']//a[text()='Women']")
     public WebElement womenLink;
-
 }

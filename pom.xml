@@ -12,6 +12,8 @@
         <module>generic</module>
         <module>gucci</module>
         <module>amazon</module>
+        <module>chase</module>
+        <module>aetna</module>
     </modules>
 
     <build>

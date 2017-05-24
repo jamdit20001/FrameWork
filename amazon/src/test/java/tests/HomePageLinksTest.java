@@ -3,6 +3,7 @@ package tests;
 import framework.AmazonCommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.GiftResigtryPage;
 
 /**
  * Created by shazeda on 5/21/17.
@@ -32,5 +33,19 @@ public class HomePageLinksTest extends AmazonCommonAPI {
         String actualTitle = cartPage.emptyCartMessage.getText();
         String expectedTitle = "Your Shopping Cart is empty.";
         Assert.assertEquals(actualTitle, expectedTitle);
+    }
+
+    @Test
+    public void testTodaysDealLink() {
+        headerPage.todaysDealLink.click();
+        String actualTitle = todaysDealPage.todaysDealsMessage.getText();
+        String expectedTitle = "Today's Deals";
+        Assert.assertEquals(actualTitle,expectedTitle);
+    }
+
+    @Test
+    public void testGiftRegistryLink() {
+        headerPage.giftRegistryLink.click();
+        waitToBeVisible(giftResigtryPage.sendGiftByMailButton);
     }
 }
