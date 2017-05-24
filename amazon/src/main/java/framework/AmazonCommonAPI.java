@@ -15,14 +15,16 @@ public class AmazonCommonAPI extends CommonAPI {
     protected CartPage cartPage;
     protected TodaysDealPage todaysDealPage;
     protected GiftResigtryPage giftResigtryPage;
+    protected SearchResultPage searchResultPage;
 
     @BeforeMethod
     public void setUpPageObject() {
-        footerPage = PageFactory.initElements(driver,FooterPage.class);
-        headerPage = PageFactory.initElements(driver,HeaderPage.class);
-        helpPage = PageFactory.initElements(driver,HelpPage.class);
-        cartPage = PageFactory.initElements(driver,CartPage.class);
-        todaysDealPage = PageFactory.initElements(driver,TodaysDealPage.class);
-        giftResigtryPage = PageFactory.initElements(driver,GiftResigtryPage.class);
+        footerPage = PageFactory.initElements(driver, FooterPage.class);
+        headerPage = PageFactory.initElements(driver, HeaderPage.class);
+        helpPage = PageFactory.initElements(driver, HelpPage.class);
+        cartPage = PageFactory.initElements(driver, CartPage.class);
+        todaysDealPage = PageFactory.initElements(driver, TodaysDealPage.class);
+        giftResigtryPage = PageFactory.initElements(driver, GiftResigtryPage.class);
+        searchResultPage = PageFactory.initElements(driver, SearchResultPage.class);
     }
 }

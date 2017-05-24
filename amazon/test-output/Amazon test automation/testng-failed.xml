@@ -7,14 +7,14 @@
   <parameter name="platform" value="mac"/>
   <test name="Home Page(failed)">
     <classes>
-      <class name="tests.HomePageLinksTest">
+      <class name="tests.SearchTests">
         <methods>
-          <include name="testTodaysDealLink"/>
+          <include name="searchFromMysqlDatabase"/>
           <include name="setup"/>
           <include name="setUpPageObject"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- tests.HomePageLinksTest -->
+      </class> <!-- tests.SearchTests -->
     </classes>
   </test> <!-- Home Page(failed) -->
 </suite> <!-- Failed suite [Amazon test automation] -->

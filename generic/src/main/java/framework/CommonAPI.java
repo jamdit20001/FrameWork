@@ -17,6 +17,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import utility.reader.ConnectDB;
+import utility.reader.DataReader;
 
 import java.io.File;
 import java.net.URL;
@@ -30,6 +32,9 @@ import java.util.concurrent.TimeUnit;
 public class CommonAPI {
 
     protected WebDriver driver = null;
+
+    protected DataReader dataReader = new DataReader();
+    protected ConnectDB connectDB = new ConnectDB();
 
     private static final String browserstackUser = "shazedasharmin1";
     private static final String browserstackKey = "hs84HDzonhAEyst71vRQ";

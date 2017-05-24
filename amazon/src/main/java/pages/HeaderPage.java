@@ -20,4 +20,8 @@ public class HeaderPage {
 
     @FindBy(xpath = "//div[@id='nav-xshop']//a[text()='Gift Cards & Registry']")
     public WebElement giftRegistryLink;
+
+    @FindBy(id = "twotabsearchtextbox")
+    public WebElement searchBox;
+
 }
