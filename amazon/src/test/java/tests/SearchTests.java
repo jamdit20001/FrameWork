@@ -15,10 +15,9 @@ public class SearchTests extends AmazonCommonAPI {
 
     @Test
     public void searchCamera() {
-        headerPage.searchBox.sendKeys("Camera");
-        headerPage.searchBox.submit();
+        headerPage.search("Camera");
 
-        String actual = searchResultPage.searchKeyword.getText();
+        String actual = searchResultPage.getSearchKeywordText();
         String expected = "\"Camera\"";
         Assert.assertEquals(actual, expected);
     }
@@ -34,11 +33,9 @@ public class SearchTests extends AmazonCommonAPI {
 
         for (String keyword : keywords) {
 
-            headerPage.searchBox.clear();
-            headerPage.searchBox.sendKeys(keyword);
-            headerPage.searchBox.submit();
+            headerPage.search(keyword);
 
-            String actual = searchResultPage.searchKeyword.getText();
+            String actual = searchResultPage.getSearchKeywordText();
             String expected = "\"" + keyword + "\"";
             Assert.assertEquals(actual, expected);
 
@@ -58,11 +55,9 @@ public class SearchTests extends AmazonCommonAPI {
 
         for (String keyword : keywords) {
 
-            headerPage.searchBox.clear();
-            headerPage.searchBox.sendKeys(keyword);
-            headerPage.searchBox.submit();
+            headerPage.search(keyword);
 
-            String actual = searchResultPage.searchKeyword.getText();
+            String actual = searchResultPage.getSearchKeywordText();
             String expected = "\"" + keyword + "\"";
             Assert.assertEquals(actual, expected);
 

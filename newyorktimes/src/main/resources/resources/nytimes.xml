@@ -1,0 +1,14 @@
+<suite name="NYTimes test automation" verbose="10">
+
+    <parameter name="url" value="https://www.nytimes.com" />
+    <parameter name="browser" value="chrome" />
+    <parameter name="platform" value="mac" />
+    <parameter name="env" value="local" />
+
+    <test name="Home Page" preserve-order="true">
+        <classes>
+            <class name="tests.HomePageTest" />
+        </classes>
+    </test>
+
+</suite>

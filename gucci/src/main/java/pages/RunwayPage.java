@@ -14,4 +14,15 @@ public class RunwayPage {
     @FindBy(css = ".hero-title")
     public WebElement title;
 
+    public WebElement getRunwayBody() {
+        return runwayBody;
+    }
+
+    public WebElement getTitle() {
+        return title;
+    }
+
+    public String getTitleText() {
+        return getTitle().getText();
+    }
 }

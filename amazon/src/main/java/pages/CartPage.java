@@ -11,4 +11,12 @@ public class CartPage {
 
     @FindBy( css= ".sc-cart-header h1")
     public WebElement emptyCartMessage;
+
+    public WebElement getEmptyCartMessage() {
+        return emptyCartMessage;
+    }
+
+    public String getEmptyCartMessageText() {
+        return getEmptyCartMessage().getText();
+    }
 }

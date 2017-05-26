@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Aetna test automation" duration-ms="28189" started-at="2017-05-26T01:41:36Z" finished-at="2017-05-26T01:42:04Z">
+    <groups>
+    </groups>
+    <test name="Home Page" duration-ms="28189" started-at="2017-05-26T01:41:36Z" finished-at="2017-05-26T01:42:04Z">
+      <class name="tests.HomePageTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@17550481]" name="setup" is-config="true" duration-ms="9880" started-at="2017-05-25T21:41:36Z" finished-at="2017-05-25T21:41:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.aetna.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mac]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setUpPageObject()[pri:0, instance:tests.HomePageTest@17550481]" name="setUpPageObject" is-config="true" duration-ms="33" started-at="2017-05-25T21:41:46Z" finished-at="2017-05-25T21:41:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method status="PASS" signature="testHealthCareLink()[pri:0, instance:tests.HomePageTest@17550481]" name="testHealthCareLink" duration-ms="3336" started-at="2017-05-25T21:41:46Z" finished-at="2017-05-25T21:41:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHealthCareLink -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@17550481]" name="teardown" is-config="true" duration-ms="153" started-at="2017-05-25T21:41:49Z" finished-at="2017-05-25T21:41:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testHealthCareLink status=SUCCESS method=HomePageTest.testHealthCareLink()[pri:0, instance:tests.HomePageTest@17550481] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@17550481]" name="setup" is-config="true" duration-ms="4713" started-at="2017-05-25T21:41:49Z" finished-at="2017-05-25T21:41:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.aetna.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mac]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setUpPageObject()[pri:0, instance:tests.HomePageTest@17550481]" name="setUpPageObject" is-config="true" duration-ms="1" started-at="2017-05-25T21:41:54Z" finished-at="2017-05-25T21:41:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method status="PASS" signature="testIndividualsFamLink()[pri:0, instance:tests.HomePageTest@17550481]" name="testIndividualsFamLink" duration-ms="2643" started-at="2017-05-25T21:41:54Z" finished-at="2017-05-25T21:41:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIndividualsFamLink -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@17550481]" name="teardown" is-config="true" duration-ms="212" started-at="2017-05-25T21:41:56Z" finished-at="2017-05-25T21:41:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testIndividualsFamLink status=SUCCESS method=HomePageTest.testIndividualsFamLink()[pri:0, instance:tests.HomePageTest@17550481] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@17550481]" name="setup" is-config="true" duration-ms="5001" started-at="2017-05-25T21:41:57Z" finished-at="2017-05-25T21:42:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.aetna.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mac]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setUpPageObject()[pri:0, instance:tests.HomePageTest@17550481]" name="setUpPageObject" is-config="true" duration-ms="1" started-at="2017-05-25T21:42:02Z" finished-at="2017-05-25T21:42:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObject -->
+        <test-method status="PASS" signature="testProducersLink()[pri:0, instance:tests.HomePageTest@17550481]" name="testProducersLink" duration-ms="2044" started-at="2017-05-25T21:42:02Z" finished-at="2017-05-25T21:42:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProducersLink -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@17550481]" name="teardown" is-config="true" duration-ms="135" started-at="2017-05-25T21:42:04Z" finished-at="2017-05-25T21:42:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testProducersLink status=SUCCESS method=HomePageTest.testProducersLink()[pri:0, instance:tests.HomePageTest@17550481] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.HomePageTest -->
+    </test> <!-- Home Page -->
+  </suite> <!-- Aetna test automation -->
+</testng-results>

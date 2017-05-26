@@ -24,4 +24,45 @@ public class HeaderPage {
     @FindBy(id = "twotabsearchtextbox")
     public WebElement searchBox;
 
+    public WebElement getCartLink() {
+        return cartLink;
+    }
+
+    public WebElement getGiftRegistryLink() {
+        return giftRegistryLink;
+    }
+
+    public WebElement getHelpLink() {
+        return helpLink;
+    }
+
+    public WebElement getSearchBox() {
+        return searchBox;
+    }
+
+    public WebElement getTodaysDealLink() {
+        return todaysDealLink;
+    }
+
+    public void search(String text) {
+        getSearchBox().clear();
+        getSearchBox().sendKeys(text);
+        getSearchBox().submit();
+    }
+
+    public void clickHelpLink() {
+        getHelpLink().click();
+    }
+
+    public void clickCartLink() {
+        getCartLink().click();
+    }
+
+    public void clickTodaysDealLink() {
+        getTodaysDealLink().click();
+    }
+
+    public void clickGiftRegistryLink() {
+        getGiftRegistryLink().click();
+    }
 }

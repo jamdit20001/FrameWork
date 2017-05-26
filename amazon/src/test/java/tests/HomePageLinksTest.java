@@ -17,9 +17,8 @@ public class HomePageLinksTest extends AmazonCommonAPI {
         // click help
         // verify help page title
 
-        waitToBeClickable(headerPage.helpLink);
-        headerPage.helpLink.click();
-        String actualTitle = helpPage.helpTitle.getText();
+        headerPage.clickHelpLink();
+        String actualTitle = helpPage.getHelpTitleText();
         String expectedTitle = "Hello. What can we help you with?";
         Assert.assertEquals(actualTitle, expectedTitle);
     }
@@ -29,23 +28,26 @@ public class HomePageLinksTest extends AmazonCommonAPI {
 
         //click the shopping cart
         //verify "Your Shopping Cart is empty."
-        headerPage.cartLink.click();
-        String actualTitle = cartPage.emptyCartMessage.getText();
+        headerPage.clickCartLink();
+        String actualTitle = cartPage.getEmptyCartMessageText();
         String expectedTitle = "Your Shopping Cart is empty.";
         Assert.assertEquals(actualTitle, expectedTitle);
     }
 
     @Test
     public void testTodaysDealLink() {
-        headerPage.todaysDealLink.click();
-        String actualTitle = todaysDealPage.todaysDealsMessage.getText();
+        headerPage.clickTodaysDealLink();
+        String actualTitle = todaysDealPage.getTodaysDealsMessageText();
         String expectedTitle = "Today's Deals";
         Assert.assertEquals(actualTitle,expectedTitle);
     }
 
     @Test
     public void testGiftRegistryLink() {
-        headerPage.giftRegistryLink.click();
+        headerPage.clickGiftRegistryLink();
         waitToBeVisible(giftResigtryPage.sendGiftByMailButton);
+        String actual = giftResigtryPage.getSendGiftByMailButtonText();
+        String expected = "SEND A GIFT CARD BY MAIL";
+        Assert.assertEquals(actual, expected);
     }
 }

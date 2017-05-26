@@ -11,4 +11,12 @@ public class HelpPage {
 
     @FindBy(css = ".ss-landing-container h1")
     public WebElement helpTitle;
+
+    public WebElement getHelpTitle() {
+        return helpTitle;
+    }
+
+    public String getHelpTitleText() {
+        return getHelpTitle().getText();
+    }
 }

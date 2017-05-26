@@ -14,4 +14,16 @@ public class WomensPage {
     @FindBy(css = ".hero-title")
     public WebElement title;
 
+    public WebElement getWomensPageBody() {
+        return womensPageBody;
+    }
+
+    public WebElement getTitle() {
+        return title;
+    }
+
+    public String getTitleText() {
+        return getTitle().getText();
+    }
+
 }
