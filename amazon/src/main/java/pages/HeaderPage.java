@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 /**
- * Created by shazeda on 5/21/17.
+
  */
 public class HeaderPage {
 
