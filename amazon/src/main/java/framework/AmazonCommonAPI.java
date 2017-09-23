@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import pages.*;
 
 /**
- * Created by shazeda on 5/21/17.
+
  */
 public class AmazonCommonAPI extends CommonAPI {
 
